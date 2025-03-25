@@ -1,0 +1,40 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    /* font-weight: 100; */
+    /*il font-weight va da 100 a 900, dove 400 è "normal"*/
+    /*il default è 400, se non dichiaro un font-weight lo spessore è 400=normal*/
+}
+
+
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+.img-fluid {
+    max-width: 100%; /*l'immagine sarà al massimo larga come la sua dimensione effettiva */
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.img-center {
+    /*centrare immagine: 1. forzare come elemento blocco 2. impostare margine automatico*/
+    display: block;
+    margin:auto;
+
+}
+
+
+.img-left {
+    float: left; /*allinea a sinistra e avvolgi il testo attorno */
+    margin-right:1rem; /*aggiungo un margine per staccare il testo dal bordo dell'immagine */
+}
+
+.img-right {
+    float: right;
+    margin-left: 1rem;
+}
+

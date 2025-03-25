@@ -1,0 +1,49 @@
+
+/* -------------------------------------------------------------------------- */
+/*                             MISURE PERCENTUALI                             */
+/* -------------------------------------------------------------------------- */
+
+.container {
+    background-color: rgb(255, 255, 0);
+    width:80%;
+    margin:auto;
+
+    padding: 1rem; /*un valore solo lo imposta su tutti e 4 i lati */
+    /*i rem possono anche essere inferiori a 1, es. 0.5rem*/
+}
+
+header {
+    height: 100vh; /* tutta l'altezza del viewport */
+    background:orange;
+
+    /* NOTA: se imposto un'altezza fissa e il testo è più lungo del contenitore, uscirà malamente dal contenitore.  */
+}
+
+.box {
+    /* 50% del genitore cioè 50% di .container */
+    background-color: #12b2b2;
+    width:50%;
+   
+}
+
+.box-2 {
+    /*30% del genitore cioè 30% di .box */
+    background-color: fuchsia;
+    width:30%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              MISURE CON I REM                              */
+/* -------------------------------------------------------------------------- */
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}

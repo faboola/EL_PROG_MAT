@@ -1,0 +1,58 @@
+body {
+    background-color: #edf3ff; /*colore sfondo*/
+    color: #213f5c; /*colore testo*/
+}
+
+/* per definire il bordo: dimensione | tipo | colore */
+h2 {
+    border-bottom: 1px solid #213f5c; 
+    /*proprietà bordo: dimensione | tipo | colore*/
+    /*border-top | border-bottom | border-left | border-right */
+}
+
+/*selettore tipo ID */
+/* NOTA: per richiamare un ID si usa #. Per richiamare una CLASSE si usa . */
+/* #nome-id .nome-classe */
+#museo-egizio { 
+    color:red;
+}
+
+.intro {
+    font-size: 18px; /*18 pixel. Attenzione: indicare sempre l'unità di misura SENZA SPAZI, es. px */
+    /*NOTA: la dimensione base del testo sul browser è di 16px */
+
+    font-style: italic; /*testo in corsivo. "normal" è il valore default.*/
+}
+
+.container {
+    width:900px;
+    /*margini automatici per centrare sulla pagina*/
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    /*oppure posso usare la proprietà scorciatoia*/
+    margin: 0 auto;
+    /* il primo valore è SOPRA + SOTTO */
+    /* il secondo valore è SINISTRA + DESTRA */
+    /* equivale a scrivere: */
+    /* margin-left:auto; margin-right:auto; */
+}
+
+.evidenza {
+    font-weight: bold;
+    font-style: italic;
+    color: red;
+}
+
+/*Seleziona tutti i tag A che stanno dentro OL*/
+
+li a {
+    color:#055aa4;
+}
+
+/*posso combinare più selettori*/
+.intro a {
+    /*tutti gli A che stanno dentro un elemento con classe .intro */
+    color:orange;
+}
+
