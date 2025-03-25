@@ -27,6 +27,12 @@ h1 {
 
 }
 
+.clear {
+    /*clear serve a evitare che l'elemento si affianchi agli elementi con FLOAT */
+    clear:both;
+    /* clear: left;
+    clear: right; */
+}
 
 .img-left {
     float: left; /*allinea a sinistra e avvolgi il testo attorno */
@@ -38,3 +44,15 @@ h1 {
     margin-left: 1rem;
 }
 
+
+.box-left {
+    background-color: red;
+    float: left;
+    width: 50%;
+}
+
+.box-right {
+    background-color: blue;
+    float: right;
+    width: 50%;
+}
