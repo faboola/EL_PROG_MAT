@@ -1,0 +1,65 @@
+/*il selettore * comprende ogni elemento sulla pagina */
+/*Cambiamo il box-sizing di default per gestire meglio i padding etc*/
+/*per approfondire: https://www.w3schools.com/css/css3_box-sizing.asp */
+
+/*reset dei margini*/
+
+html, body {
+    margin:0;
+    padding: 0;
+    /*nota: posso combinare due selettori separandoli con la virgola */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    height:500px;
+    border:1px solid red;
+
+    /* -------------------------------------------------------------------------- */
+    /*                         allineamento sul main-axis:                        */
+    /* -------------------------------------------------------------------------- */
+    justify-content: start; /*valore di default*/
+    justify-content: end; /*in fondo al contenitore flex*/
+    justify-content: center; /*contenuti centrati*/
+
+    justify-content: space-between; /*distribuisci su tutto lo spazio disponibile*/
+  /* due alternative per distribuire lo spazio:*/
+    /* justify-content: space-around;
+    justify-content: space-evenly; */
+
+    /* -------------------------------------------------------------------------- */
+    /*                        allineamento sull cross-axis                        */
+    /* -------------------------------------------------------------------------- */
+
+    align-items: stretch; /*valore di default!*/
+    align-items: start; /*allinea all'inizio del cross-axis (qui in alto)*/
+    align-items: end;
+    align-items: center;
+
+
+
+
+}
+
+.box {
+    border:1px solid #222;
+    background-color: #00ddff;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Proprietà elementi figli                          */
+/* -------------------------------------------------------------------------- */
+
+#box-3 {
+    background-color: #fce131;
+    order: -1; /*sposto PRIMA di tutti quelli che hanno il valore di default order:0*/
+}
+
+#box-2 {
+    background-color: rgb(40, 177, 88);
+    order: 1;  /*sposto DOPO tutti quelli che hanno il valore di default order:0*/
+}
