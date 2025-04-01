@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin:0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.main-menu ul {
+    /*elimino i pallini e i margini da UL */
+    list-style-type:none;
+    margin:0;
+    padding:0;
+
+    /*affianco le voci con flex */
+    display: flex;
+
+    /* GAP inserisce uno spazio tra gli elementi di un sistema flexbox*/
+    gap: 1rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                SEZIONE HERO                                */
+/* -------------------------------------------------------------------------- */
+
+#hero {
+    background-image:url('../images/gnomo-hero.jpg');
+    height: 80vh;
+    background-repeat: no-repeat;
+}
