@@ -7,6 +7,20 @@ body, html {
     padding: 0;
 }
 
+body {
+    font-family: "Livvic", sans-serif;
+}
+
+h1 {
+    font-family: "Rubik Dirt", sans-serif;
+    font-weight: normal;
+}
+
+/*rendo fluide le immagini*/
+img {
+    max-width: 100%;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -15,7 +29,6 @@ body, html {
 .menu-wrapper {
     display: flex;
     justify-content: space-between;
-
     align-items: center;
 }
 
@@ -41,5 +54,83 @@ body, html {
 #hero {
     background-image:url('../images/gnomo-hero.jpg');
     height: 80vh;
+    
+    /*immagine di sfondo a tutto schermo con ridimensionamento fluido*/
     background-repeat: no-repeat;
+    background-size: cover; /*copri tutto lo spazio adattando l'immagine*/
+    background-position: center center; /*fissa al centro in orizzontale e verticale*/
+
+    /*centro il testo all'interno*/
+    display: flex;
+    align-items: center; /*centro in verticale*/
+    justify-content: center; /*centro in orizzontale*/
+}
+
+.hero-text {
+    color:white;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+.hero-text .claim {
+    font-size: 2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    INTRO                                   */
+/* -------------------------------------------------------------------------- */
+#intro {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.intro-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/*con la virgola posso assegnare lo stesso set di regole a più selettori*/  
+.intro-image, .intro-text {
+    width:50%;
+}
+
+.intro-text {
+    padding:1rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   GALLERY                                  */
+/* -------------------------------------------------------------------------- */
+
+.gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap; /*vai a capo quando finisci lo spazio*/
+
+    /*per riallineare la griglia di immagini compenso il padding di gallery-item con un margine negativo */
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.gallery-item {
+    width:25%; 
+    /*25% = 4 colonne (100/4).
+    OPPURE: 33.333% 3 colonne | 50% 2 colonne etc.
+    */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+footer {
+    /*footer molto pigro. Non fatelo.*/
+    text-align: center; 
+    background-color: #c7d4ce;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }

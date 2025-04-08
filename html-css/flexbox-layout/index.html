@@ -1,62 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox Layout</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-    <header>
-        <div class="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox Layout</title>
 
-            <div class="menu-wrapper">
-                <div class="logo">
-                    <img src="images/logo.png" alt="faleGnomeria" width="80">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="container">
+
+                <div class="menu-wrapper">
+
+                    <div class="logo">
+                        <img src="images/logo.png" alt="faleGnomeria" width="80">
+                    </div>
+
+                    <nav class="main-menu">
+                        <ul>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">About</a>
+                            </li>
+                            <li>
+                                <a href="">Products</a>
+                            </li>
+                            <li>
+                                <a href="">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                
-                <nav class="main-menu">
-                    <ul>
-                        <li>
-                            <a href="">Home</a>
-                        </li>
-                        <li>
-                            <a href="">About</a>
-                        </li>
-                        <li>
-                            <a href="">Products</a>
-                        </li>
-                        <li>
-                            <a href="">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+
             </div>
+            <!-- fine container per header -->
+        </header>
 
-        </div>
-        <!-- fine container per header -->
-    </header>
+        <main>
 
-    <main>
+            <section id="hero">
+                <div class="hero-text">
+                    <h1>Falegnomeria</h1>
+                    <div class="claim">Non solo legno.</div>
+                </div>
+            </section>
 
-        <section id="hero">
-            immagine + testo
-        </section>
+            <section id="intro">
 
-        <section id="intro">
-            testo e immagine in colonna
-        </section>
+                <div class="container">
 
-        <section id="gallery">
-            galleria immagini
-        </section>
+                    <div class="intro-wrapper">
+                        <div class="intro-image">
+                            <img src="images/img-azienda.jpg" alt="falegnomeria">
+                        </div>
+                        <div class="intro-text">
+                            <h2>Lorem, ipsum dolor.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ex totam quae
+                                adipisci, excepturi quia reprehenderit tempora itaque odit, reiciendis dicta et
+                                incidunt nulla harum ipsam ducimus eaque voluptates architecto vero veniam
+                                maiores, soluta illum impedit? Aliquam nisi impedit possimus.</p>
+                        </div>
+                    </div>
 
-    </main>
+                </div>
 
-    <footer>
-        © 2025 Corso Elementi Programmazione
-    </footer>
+            </section>
 
-</body>
+            <section id="gallery">
+                <div class="container">
+                    <div class="gallery-wrapper">
+
+                        <div class="gallery-item">
+                            <img src="images/gnomo_1.jpg" alt="">
+                            <div class="img-caption">Gnomo piallatore</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="images/gnomo_2.jpg" alt="">
+                            <div class="img-caption">Gnomo tagliatutto</div>
+
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="images/gnomo_3.jpg" alt="">
+                            <div class="img-caption">Gnomo corriere</div>
+
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="images/gnomo_4.jpg" alt="">
+                            <div class="img-caption">Gnomo boscaiolo</div>
+
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="images/gnomo_5.jpg" alt="">
+                            <div class="img-caption">Gnomo receptionist</div>
+
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="images/gnomo_6.jpg" alt="">
+                            <div class="img-caption">Gnomo tempera dita</div>
+
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="images/gnomo_7.jpg" alt="">
+                            <div class="img-caption">Gnomo logistica</div>
+
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="images/gnomo_8.jpg" alt="">
+                            <div class="img-caption">Gnomo Customer care</div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            © 2025 Corso Elementi Programmazione
+        </footer>
+
+    </body>
 </html>
